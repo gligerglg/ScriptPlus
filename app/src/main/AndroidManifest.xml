@@ -6,18 +6,18 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="Script+"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".SplashScreen">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MainPage">
             <intent-filter>
                 <action android:name="com.example.gayanlakshitha.scriptplus" />
@@ -25,7 +25,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".NewNote">
             <intent-filter>
                 <action android:name="com.example.gayanlakshitha.scriptplus" />
@@ -33,23 +32,42 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".SetPassword">
+        <activity
+            android:name=".SetPassword"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="com.example.gayanlakshitha.scriptplus" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity android:name=".GetPassword">
             <intent-filter>
-                <action android:name="com.example.gayanlakshitha.scriptplus" />
+                <action
+                    android:name="com.example.gayanlakshitha.scriptplus"
+                    android:screenOrientation="portrait" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".Account">
+            <intent-filter>
+                <action
+                    android:name="com.example.gayanlakshitha.scriptplus"
+                    android:screenOrientation="portrait" />
 
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUp">
+            <intent-filter>
+                <action
+                    android:name="com.example.gayanlakshitha.scriptplus"
+                    android:screenOrientation="portrait" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

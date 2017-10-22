@@ -24,7 +24,7 @@
 
     <item
         android:id="@+id/mnu_mail"
-        android:title="Send"
+        android:title="Share"
         app:showAsAction="ifRoom"
         android:icon="@drawable/email_icon"
         />

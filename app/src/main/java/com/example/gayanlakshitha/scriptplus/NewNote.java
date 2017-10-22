@@ -272,7 +272,7 @@ public class NewNote extends AppCompatActivity{
 
         try
         {
-            startActivity(Intent.createChooser(emailIntent,"Send Mail"));
+            startActivity(Intent.createChooser(emailIntent,"Share Script"));
         }
         catch (android.content.ActivityNotFoundException e)
         {

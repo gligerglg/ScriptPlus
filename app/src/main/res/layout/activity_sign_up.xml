@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gayanlakshitha.scriptplus.SignUp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:layout_marginBottom="0dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/lock_icon"
+            android:contentDescription="" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Create New Script+ Account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/txt_signup_repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_register_signup"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Repeat Password"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="#994204"
+            android:textColorHint="#994204"/>
+
+        <EditText
+            android:id="@+id/txt_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_signup_repeat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColor="@color/colorPrimary"
+            android:backgroundTint="#994204"
+            android:textColorHint="#994204"/>
+
+        <EditText
+            android:id="@+id/txt_signup_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_signup_password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:backgroundTint="#994204"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="#994204" />
+
+        <Button
+            android:id="@+id/btn_register_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            style="@style/button"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:text="*Make Sure You have a Working Internet Connection" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

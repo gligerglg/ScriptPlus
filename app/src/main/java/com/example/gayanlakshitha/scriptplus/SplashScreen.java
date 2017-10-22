@@ -2,7 +2,7 @@ package com.example.gayanlakshitha.scriptplus;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 public class SplashScreen extends Activity {
@@ -12,23 +12,28 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
+        SharedPreferences sharedPreferences = getSharedPreferences("shared",0);
+        final boolean acc_status = sharedPreferences.getBoolean("status",false);
+
         Thread timerThread = new Thread()
         {
             public  void run()
             {
                 try
                 {
-                    sleep(2000);
+                    sleep(1500);
                 }
                 catch (InterruptedException e)
                 {
                     e.printStackTrace();
                 }
-                finally
-                {
-                    Intent intent = new Intent(SplashScreen.this,MainPage.class);
-                    startActivity(intent);
+                finally {
+                    if(acc_status)
+                        startActivity(new Intent(SplashScreen.this,MainPage.class));
+                    else
+                        startActivity(new Intent(SplashScreen.this,Account.class));
                 }
+
             }
         };
 

@@ -7,4 +7,8 @@
         android:icon="@drawable/new_note"
         android:title="New Note"
     />
+    <item android:id="@+id/btn_sync"
+        app:showAsAction="ifRoom"
+        android:title="Sync"
+        android:icon="@drawable/sync_btn"/>
 </menu>
