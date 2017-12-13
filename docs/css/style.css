@@ -1,0 +1,37 @@
+
+.btn_round
+{
+	background: transparent;
+	color: black;
+	border-radius: 25px 0px 25px 0px;
+}
+
+.btn_round_shape
+{
+	border-radius: 25px 0px 25px 0px;
+}
+
+img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+p
+{
+	 font-family: "Times New Roman", Times, serif;
+}
+
+span
+{
+	font-weight: bold;
+}
+
+#contact 
+{
+	padding-top:50px;
+	height:auto;
+	color: #fff; 
+	background-color: #292933;
+	padding-bottom: 50px;
+}
